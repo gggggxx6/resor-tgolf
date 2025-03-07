@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حزمة Tee Triple</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .section img {
+            width: 350px; /* حجم أكبر للصور */
+            height: 250px; /* حجم أكبر للصور */
+            margin-left: 30px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover img {
+            transform: scale(1.05);
+        }
+
+        .section .text {
+            flex: 1;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .contact-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contact-button button {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #07aae0, #091adc);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .contact-button button:hover {
+            background: linear-gradient(135deg, #091adc, #07aae0);
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 1.1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section img {
+                margin: 0 0 20px 0;
+                width: 100%;
+                height: auto;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #07aae0, #091adc); /* لون ذهبي مائل للبرتقالي */
+            color:#ffffff;
+             padding: 15px 30px;
+             font-size: 30px;
+             text-decoration: none;
+             border-radius: 5px;
+             font-family: 'Georgia', serif;
+             transition: background 0.3s;
+        }
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>حزمة Tee Triple</h1>
+    </header>
+
+    <nav>
+        <ul>
+         
+        <a href="الصفحه الرئيسيه (1).html">الصفحة الرئيسية</a>
+        <a href="خمس جولات.html">خمس جولات</a>
+        <a href="الجولة الثلاثية.html">الجولة الثلاثية</a>
+        <a href="استراحة استحمام.html">استراحة استجمام</a>
+        <a href="الحزمة المخصصة.html">الحزمة المخصصة</a>
+        <a href="استفسار واحجز.html">استفسار واحجز</a>
+        <a href="خدماتنا.html">خدماتنا </a>
+
+        </ul>
+    </nav>
+
+
+        <div class="section">
+            <img src="free-photo-of-a-man-and-woman-are-playing-golf-on-a-green.jpeg" >
+            <div class="text">
+                <h3>مقدمة حزمة Tee Triple</h3>
+                <p>استمتع بعطلة جولف مميزة مع حزمة Tee Triple، التي توفر لك تجربة لعب رائعة على مدار ثلاث جولات، مع إقامة فاخرة وخدمات مميزة تجعل رحلتك ممتعة ومريحة. هذه الحزمة مصممة لعشاق الجولف الذين يرغبون في تحقيق أقصى استفادة من وقتهم في المنتجع، مع امتيازات إضافية تجعلها تجربة استثنائية.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img style="height: 350px;" src="pexels-photo-1325654.webp">
+            <div class="text">
+                <h3>محتويات حزمة Tee Triple</h3>
+                <ul>
+                    <li>✔ إقامة لمدة ليلتين في غرفة مزدوجة راقية، تشمل وجبة إفطار يومية لبدء يومك بطاقة وحيوية.</li>
+                    <li>✔ ثلاث جولات جولف (18 حفرة لكل جولة)، تتيح لك اختبار مهاراتك والاستمتاع بتحديات مختلفة في بيئة احترافية.</li>
+                    <li>✔ جولة مضمونة في ملعب "سي فيو" الشهير (في حال التوافر)، وهو واحد من أفضل الملاعب في المنطقة.</li>
+                    <li>✔ تأجير مجاني لعربة الجولف طوال مدة الجولات، لضمان تجربة لعب مريحة وسلسة.</li>
+                    <li>✔ خصم 20% على جميع مشترياتك من متجر المحترفين، حيث يمكنك العثور على أفضل المعدات والملابس والإكسسوارات الخاصة بالجولف.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <img  src="pexels-photo-6501725.jpeg" >
+            <div class="text">
+                <h3>مزايا حزمة Tee Triple</h3>
+                <ul>
+                    <li>✔ فرصة مثالية لعطلة جولف قصيرة ولكن مكثفة، مع ثلاث جولات في ملاعب رائعة.</li>
+                    <li>✔ إقامة مريحة مع وجبة إفطار لذيذة، لضمان تجربة متكاملة وممتعة.</li>
+                    <li>✔ إمكانية اللعب في ملعب "سي فيو" الشهير، مما يضيف بُعدًا فريدًا إلى تجربتك.</li>
+                    <li>✔ راحة إضافية مع تأجير مجاني للعربات، مما يسهل تنقلك داخل الملعب.</li>
+                    <li>✔ توفير مالي بفضل الخصومات الحصرية على مستلزمات الجولف.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <img style="height: auto;" src="free-photo-of-a-woman-playing-golf.jpeg" >
+            <div class="text">
+                <h3>سعر حزمة Tee Triple</h3>
+                <p>السعر: يبدأ من 50 دولارًا للشخص الواحد، شامل جميع المزايا المذكورة. قد يختلف السعر حسب موسم الحجز والتوافر. لمعرفة السعر النهائي وحجز مكانك، يرجى التواصل معنا مباشرة!</p>
+            </div>
+        </div>
+
+
+    <footer>
+        <p>اهلا وسهلا بكم في منتجعنا </p>
+    </footer>
+
+    <script>
+        function showContactForm() {
+            alert("نموذج الاتصال سيظهر هنا. يمكنك إضافة نموذج اتصال حقيقي باستخدام HTML وJavaScript.");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".section");
+
+            sections.forEach(section => {
+                section.addEventListener("mouseenter", () => {
+                    section.style.transform = "translateY(-10px)";
+                    section.querySelector("img").style.transform = "scale(1.05)";
+                });
+
+                section.addEventListener("mouseleave", () => {
+                    section.style.transform = "translateY(0)";
+                    section.querySelector("img").style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+</body>
+</html>

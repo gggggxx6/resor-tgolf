@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+  
+    <style>
+        /* التصميم العام */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button {
+            background: linear-gradient(135deg, #07aae0, #091adc); /* لون ذهبي مائل للبرتقالي */
+            color:#ffffff;
+             padding: 15px 30px;
+             font-size: 30px;
+             text-decoration: none;
+             border-radius: 5px;
+             font-family: 'Georgia', serif;
+             transition: background 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .service img {
+            width: 350px; /* حجم أكبر للصور */
+            height: 250px; /* حجم أكبر للصور */
+            margin-left: 30px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover img {
+            transform: scale(1.05);
+        }
+
+        .service .description {
+            flex: 1;
+        }
+
+        .service h3 {
+            font-size: 1.8rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+
+        .service p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 1.1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+        
+
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .service {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service img {
+                margin: 0 0 20px 0;
+                width: 100%;
+                height: auto;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+
+    <nav>
+        <ul>
+            <a href="خمس جولات.html">خمسِ جولات</a>
+            <a href="الجولة الثلاثية.html">الجولة الثلاثية</a>
+            <a href="استراحة استحمام.html">استراحة استجمام</a>
+            <a href="الحزمة المخصصة.html">الحزمة المخصصة </a>
+            <a href="الاسئلة المتكررة.html">الأسئلة المتكررة</a>
+            <a href="استفسار واحجز.html">استفسار واحجز</a>
+            <a href="الصفحه الرئيسيه (1).html">الصفحه الرئيسيه</a>
+
+        </ul>
+    </nav>
+
+        <div class="service">
+            <div class="description">
+                <h3>1. الإقامة في الفندق</h3>
+                <p>يوفر منتجع هون ان ون إقامة فاخرة في غرف مصممة بتقنيات حديثة وتوفر إطلالات رائعة على ملاعب الجولف. الغرف مجهزة بكل وسائل الراحة لتجعل إقامتك لا تُنسى. يمكنك الاستمتاع بخدمات الواي فاي المجانية، والتلفزيون الذكي، وميني بار مجهز بالكامل. بالإضافة إلى ذلك، يوفر الفندق خدمة الغرف على مدار الساعة لتلبية جميع احتياجاتك.</p>
+            </div>
+            <img src="img/1.jpg" alt="الإقامة في الفندق">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>2. ثلاث ملاعب لبطولات الجولف</h3>
+                <p>يضم المنتجع ثلاث ملاعب جولف مصممة بشكل احترافي، تلبي احتياجات اللاعبين المحترفين والهواة على حد سواء. الملاعب مصممة لتقديم تجربة لعبة ممتعة وتحدية. يمكنك الاستمتاع بإطلالات طبيعية خلابة أثناء اللعب، كما توفر الملاعب مرافق تدريبية متطورة لتحسين أدائك.</p>
+            </div>
+            <img src="img/2.jpg" alt="ثلاث ملاعب لبطولات الجولف">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>3. التدريب الرقمي</h3>
+                <p>يقدم المنتجع خدمات التدريب الرقمي باستخدام أحدث التقنيات لتحسين أداء اللاعبين. يتم تحليل الأداء وتقديم نصائح مخصصة لتحسين اللعبة. يمكنك استخدام أجهزة محاكاة الجولف المتطورة لتحسين ضرباتك، بالإضافة إلى الحصول على تقارير مفصلة عن أدائك.</p>
+            </div>
+            <img src="img/3.jpg" alt="التدريب الرقمي">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>4. دروس الجولف</h3>
+                <p>يقدم المنتجع دروس جولف مع مدربين محترفين لمساعدة اللاعبين على تحسين مهاراتهم. الدروس متاحة للاعبين من جميع المستويات. يمكنك اختيار دروس فردية أو جماعية، كما يتم توفير معدات التدريب اللازمة مجانًا.</p>
+            </div>
+            <img src="img/4.jpg" alt="دروس الجولف">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>5. ساحة تدريب بالإضاءة الكاشفة</h3>
+                <p>ساحة التدريب المزودة بالإضاءة الكاشفة تسمح للاعبين بالتدريب في أي وقت من اليوم. الساحة مجهزة بكل ما يحتاجه اللاعبون لتحسين أدائهم. يمكنك استخدام الساحة لتدريب ضرباتك الطويلة والقصيرة، كما تتوفر مرافق لتخزين معداتك بأمان.</p>
+            </div> 
+            <img src="img/5.jpg" alt="ساحة تدريب بالإضاءة الكاشفة">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>6. المطاعم والمقاهي</h3>
+                <p>يضم المنتجع مجموعة من المطاعم والمقاهي التي تقدم أطباقًا عالمية ومحلية. يمكن للزوار الاستمتاع بتجربة طعام مميزة مع إطلالات رائعة على الملاعب. تشمل الخيارات مطعمًا فاخرًا يقدم المأكولات البحرية، ومقهىً هادئًا لتناول القهوة والحلويات.</p>
+            </div>
+            <img src="img/6.jpg" alt="المطاعم والمقاهي">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>7. متجر للمحترفين</h3>
+                <p>متجر المنتجع يقدم مجموعة واسعة من معدات الجولف والملابس والإكسسوارات من أشهر العلامات التجارية. المتجر هو المكان المثالي لتجهيز كل ما تحتاجه للعبة. يمكنك العثور على كل شيء من العصي إلى الحقائب والأحذية.</p>
+            </div>
+            <img src="pexels-photo-6573711.jpeg" alt="متجر للمحترفين">
+        </div>
+
+        <div class="service">
+            <div class="description">
+                <h3>8. خدمة المساعدة في حمل أدوات الجولف</h3>
+                <p>يوفر المنتجع خدمة مساعدة في حمل أدوات الجولف لتسهيل تجربة اللاعبين. الفريق المدرب جاهز لمساعدتك في نقل معداتك بكل سهولة. يمكنك أيضًا استئجار عربات الجولف الكهربائية للتنقل بين الملاعب.</p>
+            </div>
+            <img src="img/8.jpg" alt="خدمة المساعدة في حمل أدوات الجولف">
+        </div>
+
+
+    <footer>
+        <p>مرحبًا بكم في منتجع هون ان ون - حيث تجتمع الفخامة والرياضة في مكان واحد</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const services = document.querySelectorAll(".service");
+
+            services.forEach(service => {
+                service.addEventListener("mouseenter", () => {
+                    service.style.transform = "translateY(-10px)";
+                    service.querySelector("img").style.transform = "scale(1.05)";
+                });
+
+                service.addEventListener("mouseleave", () => {
+                    service.style.transform = "translateY(0)";
+                    service.querySelector("img").style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+</body>
+</html>

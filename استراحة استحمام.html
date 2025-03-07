@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        /* استيراد الألوان والخطوط من استراحة الاستجمام */
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* الشريط الكبير */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* شريط التنقل (Navbar) */
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .text-section h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .text-section p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #07aae0, #091adc);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #091adc, #07aae0);
+        }
+
+        .image-section {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+
+        .overlay-img {
+            position: absolute;
+            width: 150px;
+            bottom: -20px;
+            right: -20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* الفوتر */
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    align-items: center;
+}
+
+/* النصوص */
+.text-section {
+    max-width: 500px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* الزر */
+.btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #b3934d;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #8a6e38;
+}
+
+/* الصور */
+.image-section {
+    position: relative;
+}
+
+.main-img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.overlay-img {
+    width: 250px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      /* تحسين الخطوط والخلفية */
+      body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #eaeff3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+}
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- الشريط الكبير -->
+    <div class="hero">
+        <h1>حزمة استراحة الاستجمام</h1>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav>
+        <a href="الصفحه الرئيسيه (1).html">الصفحة الرئيسية</a>
+        <a href="خمس جولات.html">خمسِ جولات</a>
+        <a href="الجولة الثلاثية.html">الجولة الثلاثية</a>
+        <a href="الحزمة المخصصة.html">الحزمة المخصصة</a>
+        <a href="الاسئلة المتكررة.html">الأسئلة المتكررة</a>
+        <a href="استفسار واحجز.html">استفسار واحجز</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <div class="text-section">
+                <span class="icon">🏅</span>
+                <h1>Recreational Break Promotional Package</h1>
+                <p>إذا كنت تبحث عن استراحة قصيرة ومريحة تجمع بين الفخامة والاسترخاء، فإن حزمة استراحة الاستجمام هي الخيار الأمثل لك. توفر لك هذه الحزمة فرصة للهروب من ضغوط الحياة اليومية والاستمتاع بليلة هادئة في أجواء المنتجع الفاخرة، مع إمكانية الاستمتاع بالجولف والمأكولات الراقية وخدمات متميزة تضفي على تجربتك لمسة من الترفيه والراحة.</p>
+                <button class="btn">Inquiry and reservation</button>
+            </div>
+            <div class="image-section">
+                <img src="pexels-george-milton-6953835.jpg" alt="Golf Player" class="main-img">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>🌞 ابتعد عن الضغوط، وعِش تجربة استجمام فاخرة بكل تفاصيلها!
+        </p>
+    </footer>
+    <div class="container">
+        <div class="content">
+            <div class="text-section">
+                <span class="icon">🏅</span>
+                <h1>Relaxation Package Contents</h1>
+                <li> إقامة لمدة ليلة واحدة في غرفة راقية، مع كافة وسائل الراحة لضمان استرخائك.</li>
+                <li> وجبة إفطار فاخرة تقدم لك تجربة طعام متكاملة لبدء يومك بنشاط وحيوية.</li>
+                <li> عشاء فاخر في أي من مطاعم المنتجع، حيث يمكنك الاستمتاع بأشهى الأطباق ضمن أجواء راقية.</li>
+                <li> إمكانية الوصول إلى ملاعب الجولف (تُطبق رسوم إضافية، باستثناء ملعب "سي فيو" غير المشمول في هذه الحزمة).</li>
+                <li> تأجير مجاني لنادي الجولف، مما يتيح لك تجربة اللعب دون الحاجة لإحضار معداتك الخاصة.</li>
+
+                
+     <button class="btn">Inquiry and reservation</button>
+            </div>
+            <div class="image-section">
+                <img src="pexels-cottonbro-4004122.jpg" alt="Golf Player" class="main-img">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>✨ استمتع بالهدوء، واسترخِ وسط الطبيعة، ودلّل نفسك بلحظات لا تُنسى! 🌿🏡
+        </p>
+    </footer>
+    <div class="container">
+        <div class="content">
+            <div class="text-section">
+                <span class="icon">🏅</span>
+                <h1>Relaxation Package Benefits</h1>
+
+                <li>✔ استراحة قصيرة وفاخرة تمنحك فرصة للاسترخاء بعيدًا عن الروتين اليومي.</li>
+                <li>✔ إقامة راقية مع خدمات متميزة لضمان راحتك التامة.</li>
+                <li>✔ وجبات شهية في مطاعم المنتجع، مما يضيف لمسة من الترفيه إلى إقامتك.</li>
+                <li>✔ إمكانية تجربة الجولف في بيئة احترافية، مع توفير معدات اللعب مجانًا.</li>
+                <li>✔ مرونة في الاستمتاع بمرافق المنتجع، مما يجعل تجربتك أكثر تنوعًا وراحة.</li>
+                <button class="btn">Inquiry and reservation</button>
+            </div>
+            <div class="image-section">
+                <img src="pexels-anete-lusina-5240836.jpg" alt="Golf Player" class="main-img">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>💆‍♂️ لأنك تستحق الهدوء... اجعل استراحة الاستجمام وجهتك القادمة!</p>
+    </footer>
+    <div class="container">
+        <div class="content">
+            <div class="text-section">
+                <span class="icon">🏅</span>
+                <h1>Recreation package price</h1>
+                <p>السعر: يبدأ من 70 دولارًا للشخص الواحد، شامل الإقامة، الإفطار، العشاء، وتأجير نادي الجولف. للحصول على التفاصيل الدقيقة حول الأسعار والتوافر، يُرجى التواصل معنا مباشرة!</p>
+                <button class="btn">Inquiry and reservation</button>
+            </div>
+            <div class="image-section">
+                <img src="pexels-photo-6187643.webp" alt="Golf Player" class="main-img">
+            </div>
+    
